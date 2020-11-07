@@ -46,8 +46,8 @@
                 <MenuItem Header="Doughnuts">
                     <MenuItem Header="Make">
                         <MenuItem Header="Raised">
-                            <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>
-                            <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>
+                            <MenuItem x:Name="glazedToolStripMenuItem" Header="Glazed" Click="glazedToolStripMenuItem_Click"/>
+                            <MenuItem x:Name="sugarToolStripMenuItem" Header="Sugar" Click="sugarToolStripMenuItem_Click"/>
                         </MenuItem>
                         <MenuItem Header="Filled"/>
                     </MenuItem>
