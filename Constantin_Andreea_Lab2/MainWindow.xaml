@@ -31,14 +31,15 @@
                     <ComboBox x:Name="cmbType" Canvas.Left="192" Canvas.Top="21" Width="120"/>
                     <Label x:Name="lblPrice" Content="Price" Canvas.Left="349" Canvas.Top="19" RenderTransformOrigin="0.48,-0.297"/>
                     <TextBox x:Name="txtPrice" Canvas.Left="396" Canvas.Top="23" Text="0" TextWrapping="Wrap" Width="104"/>
-                    <TextBox Canvas.Left="396" Canvas.Top="118" Text="0" TextWrapping="Wrap" Width="104" IsReadOnly="True"/>
+                    <ListBox x:Name="lstSale" Height="92" Width="585" Canvas.Left="10" Canvas.Top="46"/>
+                    <Label x:Name="lblTotal" Content="Total" Canvas.Left="350" Canvas.Top="116" FontWeight="Bold"/>
+                    <TextBox x:Name="txtTotal" Canvas.Left="396" Canvas.Top="118" Text="0" TextWrapping="Wrap" Width="104" IsReadOnly="True"/>
                     <TextBox x:Name="txtDetails" Canvas.Left="14" Canvas.Top="50" TextWrapping="Wrap" Width="486" Height="50"/>
                     <Button x:Name="btnAddToSale" Content="Add To Sale" Canvas.Left="519" Canvas.Top="50" FontWeight="Normal"/>
                     <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="519" Canvas.Top="80" FontWeight="Normal"/>
                     <Button x:Name="btnCheckOut" Content="Check Out" Canvas.Left="519" Canvas.Top="116" FontWeight="Bold"/>
                 </Canvas>
             </GroupBox>
-            <Label x:Name="lblTotal" Content="Total" Canvas.Left="453" Canvas.Top="385" FontWeight="Bold"/>
             <Menu Height="33" Width="243">
                 <MenuItem Header="File">
                     <MenuItem Header="Exit"/>
@@ -50,6 +51,9 @@
                             <MenuItem x:Name="sugarToolStripMenuItem" Header="Sugar" Click="sugarToolStripMenuItem_Click"/>
                         </MenuItem>
                         <MenuItem Header="Filled"/>
+                        <MenuItem x:Name="lemonFilledMenuItem" Header="Lemon" IsCheckable="True" Click="lemonFilledMenuItem_Click"/>
+                        <MenuItem x:Name="chocolateFilledMenuItem" Header="Chocolate" IsCheckable="True" Click="chocolateFilledMenuItem_Click"/>
+                        <MenuItem x:Name="vanillaFilledMenuItem" Header="Vanilla" IsCheckable="True" Click="vanillaFilledMenuItem_Click" />
                     </MenuItem>
                 <MenuItem Header="Stop"/>
                 </MenuItem>

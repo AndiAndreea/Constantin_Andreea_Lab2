@@ -36,7 +36,7 @@ namespace Constantin_Andreea_Lab2
         public delegate void DoughnutCompleteDelegate();
         public event DoughnutCompleteDelegate DoughnutComplete;
 
-        DispatcherTimer doughnutTimer;
+        System.Windows.Threading.DispatcherTimer doughnutTimer;
 
 
         private void InitializeComponent()
